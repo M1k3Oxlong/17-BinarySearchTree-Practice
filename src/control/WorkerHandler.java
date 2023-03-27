@@ -19,6 +19,12 @@ public class WorkerHandler {
      */
     public void addTaskAndWorker(String name, int id){
         //TODO 03: Setzen Sie die Methode gemäß obiger Beschreibung um.
+
+        Worker w = new Worker(name);
+        w.addTask(id);
+
+
+        allWorker.insert(w);
     }
 
     /**
